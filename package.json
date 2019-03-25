@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "botbuilder": "^4.3.2",
+    "botbuilder-dialogs": "^4.3.2",
+    "dotenv": "^6.2.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "restify": "^8.1.0",
+    "sleep": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/request": "^2.48.1",
+    "@types/request-promise-native": "^1.0.15",
+    "@types/restify": "^7.2.8",
+    "@types/sleep": "0.0.7",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "start": "node ./lib/app.js",
+    "start-watch": "nodemon --watch 'source/**/*.ts' --ignore 'source/**/*.spec.ts' --exec ts-node source/app.ts"
+  }
+}
